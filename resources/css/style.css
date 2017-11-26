@@ -1,6 +1,12 @@
-body {
+html {
   font-family: Roboto sans-serif;
+  display: block;
+  font-size: 16px;
+}
 
+body {
+  display: block;
+  margin: 0;
 }
 
 div {
