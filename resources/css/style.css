@@ -12,3 +12,10 @@ body {
 div {
   display: block;
 }
+
+.logo {
+  display: flex;
+  background-color: white;
+  color: black;
+  
+}
