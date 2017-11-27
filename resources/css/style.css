@@ -1,7 +1,8 @@
 html {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: block;
   font-size: 16px;
+  color: #696969;
 }
 
 body {
@@ -13,9 +14,81 @@ div {
   display: block;
 }
 
-.logo {
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* header */
+header {
   display: flex;
   background-color: white;
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+header nav {
+  padding-right: 1.5em;
+}
+
+nav {
+  display: block;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  padding-left: 1.5em;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 2.75em;
   color: black;
-  
+}
+
+.logo .colmar {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.logo .academy {
+  color: #c0c0c0;
+  font-size: 1.5em;
+}
+
+.desktop ul, li {
+  display: inline-block;
+  padding: 0.5em;
+  color: #696969;
+}
+
+/* banner */
+
+.banner {
+  background-color: #c0c0c0;
+  padding-top: 4em;
+}
+
+.banner .container {
+  display: flex;
+  text-align: left;
+}
+
+.banner .left-column {
+  width: 60%;
+  padding: 2em 1.5em;
+}
+
+.left-column .banner-image {
+  width: 100%
+}
+
+.banner .right-column {
+  font-size: 1.35em;
+  width: 40%;
 }
