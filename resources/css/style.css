@@ -91,4 +91,46 @@ nav {
 .banner .right-column {
   font-size: 1.35em;
   width: 40%;
+  padding: 2em 2em 3em 1.5em;
+}
+
+.button span {
+  background-color: #696969;
+  color: white;
+  padding: .5em 8em;
+  flex: 1 2;
+}
+
+/* Information */
+
+.information .container {
+  display: flex;
+}
+
+.info-left {
+  padding: 2em 1.5em;
+  width: 60%;
+}
+
+.left-column .male-student {
+  width: 100%;
+}
+
+.information .right-column {
+  width: 40%;
+  padding-left: 1em;
+}
+
+.image-content img {
+  width: 35%;
+  padding: 1em 1em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.image-info {
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
 }
