@@ -19,6 +19,41 @@ div {
   align-items: center;
 }
 
+img {
+  overflow: hidden;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 0.889rem;
+  font-weight: 450;
+  line-height: 1.5rem;
+}
+
+#courses h2,
+#thesis h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
 /* header */
 header {
   display: flex;
@@ -49,6 +84,7 @@ nav {
 .logo img {
   height: 2.75em;
   color: black;
+  width: auto;
 }
 
 .logo .colmar {
@@ -74,13 +110,17 @@ nav {
   padding-top: 4em;
 }
 
+.banner h1 {
+  margin-bottom: 1em;
+}
+
 .banner .container {
   display: flex;
   text-align: left;
 }
 
 .banner .left-column {
-  width: 60%;
+  min-width: 60%;
   padding: 2em 1.5em;
 }
 
@@ -95,42 +135,95 @@ nav {
 }
 
 .button span {
-  background-color: #696969;
   color: white;
-  padding: .5em 8em;
-  flex: 1 2;
+}
+.button {
+  margin-top: 2em;
+  background-color: #696969;
+  padding: .5em;
+  width: 80%;
+  text-align: center;
 }
 
 /* Information */
 
-.information .container {
+#information .container {
   display: flex;
+  align-items: normal;
 }
 
-.info-left {
-  padding: 2em 1.5em;
-  width: 60%;
+#information h3 {
+  font-weight: bold;
+}
+
+
+#information .info-left {
+  padding: 2em 1.5em 0 1.5em;
+  max-width: 60%;
+}
+
+#information .image-content:hover {
+  background-color: lightgrey;
 }
 
 .left-column .male-student {
   width: 100%;
+  padding-bottom: 2em;
 }
 
-.information .right-column {
+.info-main-content p {
+  padding-top: 1.5em
+}
+
+.info-main-content h6 {
+  padding: 1.5em 0 0 0;
+  font-weight: 550;
+}
+
+#information .right-column {
   width: 40%;
-  padding-left: 1em;
+  border-left: 1px solid lightgrey;
+  padding-top: 2em;
 }
 
-.image-content img {
-  width: 35%;
+.right-column .image-content {
+  display: flex;
+  height: auto;
+  width: auto;
   padding: 1em 1em;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
+  border-top: 1px solid lightgrey;
+  flex-direction: row;
+}
+.right-column .image {
+  width: 35%;
+}
+
+.right-column .image-info {
+  width: 65%;
+  line-height: 0.5em;
+  padding-left: 1em;
+  align-self: center;
+}
+.right-column .read-more {
+  color: blue;
+}
+
+.right-column .read-more:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+#courses .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#courses .image {
+  display: flex;
+  flex-direction: column;
 }
 
 .image-info {
-  width: 65%;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
 }
