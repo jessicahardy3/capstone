@@ -16,7 +16,6 @@ div {
 
 .container {
   display: flex;
-  align-items: center;
 }
 
 img {
@@ -39,7 +38,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 550;
   line-height: 2rem;
 }
 
@@ -114,6 +113,7 @@ nav {
 .banner .container {
   display: flex;
   text-align: left;
+  align-items: center;
 }
 
 .banner .left-column {
@@ -129,6 +129,7 @@ nav {
   font-size: 1.35em;
   width: 40%;
   padding: 2em 2em 3em 1.5em;
+  align-content: center;
 }
 
 .button span {
@@ -160,7 +161,7 @@ nav {
   max-width: 60%;
 }
 
-#information .image-content:hover {
+.image-content:hover {
   background-color: lightgrey;
 }
 
@@ -189,9 +190,13 @@ nav {
   height: auto;
   width: auto;
   padding: 1em 1em;
-  border-top: 1px solid lightgrey;
   flex-direction: row;
 }
+
+#information .right-column .image-content {
+  border-top: 1px solid lightgrey;
+}
+
 .right-column .image {
   width: 35%;
 }
@@ -269,4 +274,24 @@ video {
 
 #thesis .left-column p {
   padding-top: .5rem;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid lightgrey;
+  width: 100%;
+}
+
+footer .copyright {
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  flex-grow: 1;
+}
+
+footer .legal {
+  padding-right: .5rem;
+  padding-top: 1rem;
+}
+
+.legal span {
+  padding-left: .5rem;
 }
