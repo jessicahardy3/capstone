@@ -101,6 +101,11 @@ nav {
   color: #696969;
 }
 
+.desktop ul, li:hover {
+  color: black;
+  background-color: lightgrey;
+}
+
 @media only screen and  (min-width: 900px){
   header .mobile {
    display: none;
@@ -146,6 +151,11 @@ nav {
 .button span {
   color: white;
 }
+
+.button span:hover {
+  color: black;
+}
+
 .button {
   margin-top: 2em;
   background-color: #696969;
@@ -308,7 +318,11 @@ footer .legal {
   padding-left: .5rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+.legal span:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   html,
   body {
     background: #FAFAFA;
@@ -378,6 +392,7 @@ footer .legal {
   margin: 1rem 1rem 2rem 1rem;
   width: auto;
   }
+
 
   #information .info-left {
     display: none;
