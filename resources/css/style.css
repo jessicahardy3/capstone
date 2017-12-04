@@ -101,8 +101,13 @@ nav {
   color: #696969;
 }
 
-header .mobile {
-  display: none;
+@media only screen and  (min-width: 900px){
+  header .mobile {
+   display: none;
+}
+  .mobile-image {
+    display: none;
+  }
 }
 
 /* banner */
@@ -256,9 +261,6 @@ header .mobile {
   line-height: 2em;
 }
 
-#information .mobile-image {
-  display: none;
-}
 /*thesis*/
 
 #thesis h2 {
@@ -351,6 +353,7 @@ footer .legal {
 
   .banner .left-column img {
     width: 100%;
+    padding-top: 2rem;
   }
 
   .banner .right-column {
